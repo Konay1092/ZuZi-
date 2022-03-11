@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/*-------------------- Start Header  --------------------------*/
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: aqua;
+}
+.nav > .firstdiv {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  margin-left: 10px;
+}
+.nav > .firstdiv > .navlogo {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+}
+.nav > .firstdiv > .navlogo > img {
+  width: 100%;
+  height: 40px;
+}
+.nav > #navcheck {
+  display: none;
+}
+.nav > .seconddiv {
+  display: none;
+}
+.nav > .lastdiv {
+  display: inline;
+  float: right;
+}
+.nav > .lastdiv > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 13px 20px 13px 20px;
+  font-size: 20px;
+}
+.nav > .lastdiv > a:hover {
+  background-color: burlywood;
+  font-size: 21px;
+  color: black;
+  border-radius: 12px;
+}
+/* ------ -------------------End Header  --------------------------*/
+
+/*---------------------------Start Content------------------------*/
+.photo {
+  width: 100%;
+  height: 450px;
+}
+.photo > img {
+  width: 100%;
+  height: 450px;
+}
+.product {
+  width: 1300px;
+  margin: 20px auto;
+}
+.product > h1 {
+  text-align: center;
+  font-style: italic;
+}
+.cate {
+  width: 100%;
+  column-count: 3;
+  text-align: center;
+}
+.cate .cd {
+  padding: 4px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px green;
+}
+.log {
+  width: 420px;
+  height: 441.44px;
+}
+.cate .cd img {
+  width: 100%;
+}
+.go {
+  width: 243px;
+  height: 334px;
+}
+
+/*---------------------------End Content------------------------*/
+
+/*-----------------------        Start Footer  ------------------------*/
+.footer {
+  width: 100%;
+  height: 170px;
+  background-color: antiquewhite;
+}
+.left {
+  display: inline-block;
+  width: 49%;
+}
+.center {
+  display: inline-block;
+  width: 49%;
+}
+.center > pre {
+  font-size: 20px;
+}
+.above {
+  width: 100%;
+  background-color: red;
+  font-style: oblique;
+}
+/*-------------------------------   End Footer  ---------------*/
+@media all and (max-width: 650px) {
+  /* ---------------------   Start Header  -----------------------*/
+  .nav > .seconddiv {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav > .seconddiv > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+  .nav > .seconddiv > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  .nav > .seconddiv label:hover {
+    background-color: coral;
+    box-shadow: 1px 1px 6px gray;
+  }
+  .nav > .lastdiv {
+    height: 0px;
+    overflow-y: hidden;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 100%;
+    display: block;
+  }
+  /*.lastdiv a {
+    display: block;
+  }*/
+  .nav > #navcheck:checked ~ .lastdiv {
+    height: 100px;
+    overflow-y: auto;
+    background: yellowgreen;
+  }
+  /*----------------------- End Header  ----------*/
+
+  /*----------------------- Start Content  ----------*/
+  .photo {
+    width: 100%;
+    height: 450px;
+  }
+  .photo > img {
+    width: 100%;
+    height: 450px;
+  }
+  .product {
+    width: 450px;
+    margin: 20px auto;
+  }
+  .product > h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+  }
+  .cate {
+    width: 100%;
+    column-count: 3;
+    text-align: center;
+  }
+  .cate .cd {
+    padding: 4px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px green;
+  }
+  .log {
+    width: 140px;
+    height: 170px;
+  }
+  .cate .cd img {
+    width: 100%;
+  }
+  .go {
+    width: 70px;
+    height: 70px;
+  }
+  .h3 {
+    font-size: 8px;
+  }
+  .p {
+    font-size: 8px;
+  }
+  /*----------------------- End Content  ----------*/
+  /*----------------------- Start Footer ----------*/
+  .footer {
+    width: 100%;
+    height: 170px;
+    background-color: antiquewhite;
+  }
+  .left {
+    display: inline-block;
+    width: 49%;
+  }
+  .center {
+    display: inline-block;
+    width: 40;
+  }
+  .center > pre {
+    font-size: 17px;
+  }
+  .above {
+    width: 100%;
+    background-color: red;
+    font-style: oblique;
+  }
+}
